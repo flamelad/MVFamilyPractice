@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="c9k-fa-bYm" userLabel="UserInputView" customClass="MVFUserInputView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Hi." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Z4f-o0-bRf">
+                    <rect key="frame" x="60" y="236" width="479" height="128"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7t-7J-M2H">
+                    <rect key="frame" x="457" y="198" width="73" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="73" id="GMQ-4f-rFO"/>
+                    </constraints>
+                    <state key="normal" title="Submit">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="submitAction:" destination="c9k-fa-bYm" eventType="touchUpInside" id="shI-3Y-ocV"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input your count of family" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cmS-3o-6VZ">
+                    <rect key="frame" x="60" y="198" width="368" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select one family and input name" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTn-QV-BjH">
+                    <rect key="frame" x="60" y="169" width="470" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="p7t-7J-M2H" secondAttribute="trailing" constant="70" id="2lB-gZ-aqp"/>
+                <constraint firstAttribute="bottom" secondItem="Z4f-o0-bRf" secondAttribute="bottom" constant="236" id="9UV-O7-6PZ"/>
+                <constraint firstItem="p7t-7J-M2H" firstAttribute="leading" secondItem="cmS-3o-6VZ" secondAttribute="trailing" constant="29" id="AoS-sf-Yam"/>
+                <constraint firstItem="Z4f-o0-bRf" firstAttribute="top" secondItem="p7t-7J-M2H" secondAttribute="bottom" constant="8" id="CfF-wj-hxt"/>
+                <constraint firstItem="eTn-QV-BjH" firstAttribute="leading" secondItem="cmS-3o-6VZ" secondAttribute="leading" id="ULo-n7-uXd"/>
+                <constraint firstItem="cmS-3o-6VZ" firstAttribute="leading" secondItem="c9k-fa-bYm" secondAttribute="leading" constant="60" id="ish-r3-1xO"/>
+                <constraint firstItem="Z4f-o0-bRf" firstAttribute="top" secondItem="c9k-fa-bYm" secondAttribute="top" constant="236" id="m1P-dx-Hi0"/>
+                <constraint firstAttribute="trailing" secondItem="eTn-QV-BjH" secondAttribute="trailing" constant="70" id="mni-J5-3DI"/>
+                <constraint firstItem="cmS-3o-6VZ" firstAttribute="top" secondItem="eTn-QV-BjH" secondAttribute="bottom" constant="8" id="t8T-4l-GYz"/>
+                <constraint firstItem="Z4f-o0-bRf" firstAttribute="top" secondItem="cmS-3o-6VZ" secondAttribute="bottom" constant="8" id="tWr-o2-nRu"/>
+                <constraint firstItem="Z4f-o0-bRf" firstAttribute="leading" secondItem="c9k-fa-bYm" secondAttribute="leading" constant="60" id="wDU-z9-q20"/>
+                <constraint firstAttribute="trailing" secondItem="Z4f-o0-bRf" secondAttribute="trailing" constant="61" id="wVW-Rw-YRL"/>
+            </constraints>
+            <connections>
+                <outlet property="inputText" destination="cmS-3o-6VZ" id="f66-sp-L9K"/>
+                <outlet property="textView" destination="Z4f-o0-bRf" id="fan-VL-6s7"/>
+            </connections>
+        </view>
+    </objects>
+</document>
