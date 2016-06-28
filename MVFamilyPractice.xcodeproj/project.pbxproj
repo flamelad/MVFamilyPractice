@@ -10,13 +10,15 @@
 		7D10D6911ACBCCC600170443 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D10D6901ACBCCC600170443 /* main.m */; };
 		7D10D6941ACBCCC600170443 /* MFFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D10D6931ACBCCC600170443 /* MFFAppDelegate.m */; };
 		7D10D6971ACBCCC600170443 /* MVFamilyPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D10D6951ACBCCC600170443 /* MVFamilyPractice.xcdatamodeld */; };
-		7D10D69A1ACBCCC600170443 /* MVFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D10D6991ACBCCC600170443 /* MVFViewController.m */; };
+		7D10D69A1ACBCCC600170443 /* MVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D10D6991ACBCCC600170443 /* MVCViewController.m */; };
 		7D10D69D1ACBCCC600170443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D10D69B1ACBCCC600170443 /* Main.storyboard */; };
 		7D10D69F1ACBCCC600170443 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D10D69E1ACBCCC600170443 /* Images.xcassets */; };
 		7D10D6A21ACBCCC600170443 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D10D6A01ACBCCC600170443 /* LaunchScreen.xib */; };
 		7D10D6AE1ACBCCC600170443 /* MVFamilyPracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D10D6AD1ACBCCC600170443 /* MVFamilyPracticeTests.m */; };
 		7D10D6C21ACBE72000170443 /* MVFUserInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D10D6C11ACBE72000170443 /* MVFUserInputView.m */; };
 		7D10D6C41ACBE7FF00170443 /* MVFUserInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D10D6C31ACBE7FF00170443 /* MVFUserInputView.xib */; };
+		7D8F2FA81AD5274F008F3F52 /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8F2FA71AD5274F008F3F52 /* MVVMViewController.m */; };
+		7D8F2FAB1AD5277B008F3F52 /* MVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8F2FAA1AD5277B008F3F52 /* MVVMViewModel.m */; };
 		7DB7189D1ACCEBB00098ABC3 /* Family+Addon.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB7189C1ACCEBB00098ABC3 /* Family+Addon.m */; };
 		7DB718A01ACCEEBE0098ABC3 /* Family+instanceFRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB7189F1ACCEEBE0098ABC3 /* Family+instanceFRC.m */; };
 		7DB718A31ACCF5DA0098ABC3 /* MVFDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB718A21ACCF5DA0098ABC3 /* MVFDBManager.m */; };
@@ -40,8 +42,8 @@
 		7D10D6921ACBCCC600170443 /* MFFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFFAppDelegate.h; sourceTree = "<group>"; };
 		7D10D6931ACBCCC600170443 /* MFFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFFAppDelegate.m; sourceTree = "<group>"; };
 		7D10D6961ACBCCC600170443 /* MVFamilyPractice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVFamilyPractice.xcdatamodel; sourceTree = "<group>"; };
-		7D10D6981ACBCCC600170443 /* MVFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVFViewController.h; sourceTree = "<group>"; };
-		7D10D6991ACBCCC600170443 /* MVFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVFViewController.m; sourceTree = "<group>"; };
+		7D10D6981ACBCCC600170443 /* MVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCViewController.h; sourceTree = "<group>"; };
+		7D10D6991ACBCCC600170443 /* MVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCViewController.m; sourceTree = "<group>"; };
 		7D10D69C1ACBCCC600170443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D10D69E1ACBCCC600170443 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7D10D6A11ACBCCC600170443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		7D10D6C01ACBE72000170443 /* MVFUserInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVFUserInputView.h; sourceTree = "<group>"; };
 		7D10D6C11ACBE72000170443 /* MVFUserInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVFUserInputView.m; sourceTree = "<group>"; };
 		7D10D6C31ACBE7FF00170443 /* MVFUserInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MVFUserInputView.xib; sourceTree = "<group>"; };
+		7D8F2FA61AD5274F008F3F52 /* MVVMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MVVMViewController.h; path = "MVVM-View/MVVMViewController.h"; sourceTree = "<group>"; };
+		7D8F2FA71AD5274F008F3F52 /* MVVMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MVVMViewController.m; path = "MVVM-View/MVVMViewController.m"; sourceTree = "<group>"; };
+		7D8F2FA91AD5277B008F3F52 /* MVVMViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MVVMViewModel.h; path = "MVVM-ViewModel/MVVMViewModel.h"; sourceTree = "<group>"; };
+		7D8F2FAA1AD5277B008F3F52 /* MVVMViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MVVMViewModel.m; path = "MVVM-ViewModel/MVVMViewModel.m"; sourceTree = "<group>"; };
 		7DB7189B1ACCEBB00098ABC3 /* Family+Addon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Family+Addon.h"; sourceTree = "<group>"; };
 		7DB7189C1ACCEBB00098ABC3 /* Family+Addon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Family+Addon.m"; sourceTree = "<group>"; };
 		7DB7189E1ACCEEBE0098ABC3 /* Family+instanceFRC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Family+instanceFRC.h"; sourceTree = "<group>"; };
@@ -101,9 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				7D10D69E1ACBCCC600170443 /* Images.xcassets */,
-				7D10D6BA1ACBD6FF00170443 /* Model */,
-				7D10D6BB1ACBD7E500170443 /* View */,
-				7D10D6BC1ACBD80600170443 /* Controller */,
+				7D8F2FA21AD526A5008F3F52 /* MVC */,
+				7D8F2FA31AD526B2008F3F52 /* MVVM */,
 				7D10D68E1ACBCCC600170443 /* Supporting Files */,
 			);
 			path = MVFamilyPractice;
@@ -152,10 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				7D10D69B1ACBCCC600170443 /* Main.storyboard */,
-				7D10D6A01ACBCCC600170443 /* LaunchScreen.xib */,
-				7D10D6C31ACBE7FF00170443 /* MVFUserInputView.xib */,
-				7D10D6C01ACBE72000170443 /* MVFUserInputView.h */,
-				7D10D6C11ACBE72000170443 /* MVFUserInputView.m */,
+				7D8F2FA11AD3B5AE008F3F52 /* MVFUserInputView */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -163,10 +165,58 @@
 		7D10D6BC1ACBD80600170443 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7D10D6981ACBCCC600170443 /* MVFViewController.h */,
-				7D10D6991ACBCCC600170443 /* MVFViewController.m */,
+				7D10D6981ACBCCC600170443 /* MVCViewController.h */,
+				7D10D6991ACBCCC600170443 /* MVCViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		7D8F2FA11AD3B5AE008F3F52 /* MVFUserInputView */ = {
+			isa = PBXGroup;
+			children = (
+				7D10D6A01ACBCCC600170443 /* LaunchScreen.xib */,
+				7D10D6C31ACBE7FF00170443 /* MVFUserInputView.xib */,
+				7D10D6C01ACBE72000170443 /* MVFUserInputView.h */,
+				7D10D6C11ACBE72000170443 /* MVFUserInputView.m */,
+			);
+			name = MVFUserInputView;
+			sourceTree = "<group>";
+		};
+		7D8F2FA21AD526A5008F3F52 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				7D10D6BA1ACBD6FF00170443 /* Model */,
+				7D10D6BB1ACBD7E500170443 /* View */,
+				7D10D6BC1ACBD80600170443 /* Controller */,
+			);
+			name = MVC;
+			sourceTree = "<group>";
+		};
+		7D8F2FA31AD526B2008F3F52 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F2FA51AD526E6008F3F52 /* View */,
+				7D8F2FA41AD526DD008F3F52 /* ViewModel */,
+			);
+			name = MVVM;
+			sourceTree = "<group>";
+		};
+		7D8F2FA41AD526DD008F3F52 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F2FA91AD5277B008F3F52 /* MVVMViewModel.h */,
+				7D8F2FAA1AD5277B008F3F52 /* MVVMViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		7D8F2FA51AD526E6008F3F52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F2FA61AD5274F008F3F52 /* MVVMViewController.h */,
+				7D8F2FA71AD5274F008F3F52 /* MVVMViewController.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		7DB718A41ACCF5E40098ABC3 /* Family */ = {
@@ -283,13 +333,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D8F2FA81AD5274F008F3F52 /* MVVMViewController.m in Sources */,
+				7D8F2FAB1AD5277B008F3F52 /* MVVMViewModel.m in Sources */,
 				7D10D6C21ACBE72000170443 /* MVFUserInputView.m in Sources */,
 				7DB718AD1ACD31B10098ABC3 /* Family.m in Sources */,
 				7D10D6941ACBCCC600170443 /* MFFAppDelegate.m in Sources */,
 				7DB7189D1ACCEBB00098ABC3 /* Family+Addon.m in Sources */,
 				7D10D6971ACBCCC600170443 /* MVFamilyPractice.xcdatamodeld in Sources */,
 				7DB718A01ACCEEBE0098ABC3 /* Family+instanceFRC.m in Sources */,
-				7D10D69A1ACBCCC600170443 /* MVFViewController.m in Sources */,
+				7D10D69A1ACBCCC600170443 /* MVCViewController.m in Sources */,
 				7D10D6911ACBCCC600170443 /* main.m in Sources */,
 				7DB718A31ACCF5DA0098ABC3 /* MVFDBManager.m in Sources */,
 			);

@@ -7,6 +7,7 @@
 //
 
 #import "Family.h"
+
 @interface Family (Addon)
 +(void)createFamilyAttribute:(NSString *)name ManagedObjectContext:(NSManagedObjectContext *)moc;
 @end

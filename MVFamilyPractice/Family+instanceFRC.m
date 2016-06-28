@@ -17,21 +17,14 @@
     NSSortDescriptor *sorter=[NSSortDescriptor sortDescriptorWithKey:@"familyId" ascending:YES];
     [request setSortDescriptors:@[sorter]];
     return  [[NSFetchedResultsController alloc]initWithFetchRequest:request
-                                               managedObjectContext:[self persistentStack]
+                                               managedObjectContext:[self managedObjectContext]
                                                  sectionNameKeyPath:nil
                                                           cacheName:@"flamelad"];
 }
 
-+(NSManagedObjectContext *)persistentStack{
-    NSPersistentStoreCoordinator *coordinator=[self persistentStoreCoordinator];
-    NSManagedObjectContext* moc=[self managedObjectContext];
-    [moc setPersistentStoreCoordinator:coordinator];
-    return moc;
-}
-
 +(NSManagedObjectContext *)managedObjectContext{
     NSManagedObjectContext* moc=[[NSManagedObjectContext alloc]initWithConcurrencyType:NSMainQueueConcurrencyType];
-    
+    [moc setPersistentStoreCoordinator:[self persistentStoreCoordinator]];
     return moc;
 }
 

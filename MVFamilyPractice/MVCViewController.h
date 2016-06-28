@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MVFViewController : UIViewController
+@interface MVCViewController : UIViewController
 
 
 

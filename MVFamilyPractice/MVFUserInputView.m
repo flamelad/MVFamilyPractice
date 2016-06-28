@@ -23,6 +23,7 @@
         self=[[[NSBundle mainBundle] loadNibNamed:@"MVFUserInputView" owner:self options:nil] objectAtIndexedSubscript:0];
         self.frame=frame;
         self.textView.text=@"There is no any information...";
+        [self.textView setScrollEnabled:YES];
     }
     return self;
 }
